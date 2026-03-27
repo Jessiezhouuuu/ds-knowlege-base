@@ -6,8 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Data Science Knowledge Base',
-  tagline: 'Learning, projects, and interview-ready notes in data science',
-  favicon: 'img/favicon.ico',
+  tagline: 'A personal data science pathway',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -35,27 +34,14 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,76 +58,63 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
-    navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+  navbar: {
+    // title: 'Knowledge Base',
+    logo: {
+      alt: 'Jessie Zhou',
+      src: 'img/avatar.png',
+      href: 'https://github.com/Jessiezhouuuu', // 👈 点击跳 GitHub
+    },
+    items: [
+      {
+        to: '/',
+        label: 'Home',
+        position: 'left',
       },
+      {
+        href: 'https://github.com/Jessiezhouuuu/ds-knowlege-base',
+        label: 'GitHub',
+        position: 'right',
+      },
+    ],
+  },
+footer: {
+  style: 'dark',
+  links: [
+    {
+      title: 'Explore',
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          label: 'Introduction',
+          to: '/docs/intro',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          label: 'Knowledge Base',
+          to: '/docs/intro',
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
+    {
+      title: 'Projects',
+      items: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          label: 'GitHub Repository',
+          href: 'https://github.com/Jessiezhouuuu/ds-knowlege-base',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+    {
+      title: 'More',
+      items: [
+        {
+          label: 'GitHub Profile',
+          href: 'https://github.com/Jessiezhouuuu',
+        },
+      ],
     },
+  ],
+  copyright: `Copyright © ${new Date().getFullYear()} Jessie Zhou.`,
+},
   } satisfies Preset.ThemeConfig,
 };
 
