@@ -86,11 +86,11 @@ footer: {
       items: [
         {
           label: 'Introduction',
-          to: '/docs/intro',
+          to: '/',
         },
         {
           label: 'Knowledge Base',
-          to: '/docs/intro',
+          to: '/',
         },
       ],
     },
