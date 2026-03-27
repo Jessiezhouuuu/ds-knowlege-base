@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkds_knowledge_base=globalThis.webpackChunkds_knowledge_base||[]).push([[903],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/ds-knowlege-base/blog","blogTitle":"Blog","authorsListPath":"/ds-knowlege-base/blog/authors"}')}}]);
