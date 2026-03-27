@@ -2,46 +2,47 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to my Data Science Knowledge Base.
 
-## Getting Started
+This site is a structured collection of my learning notes, project experience, and methodological reflections in data science. I built it to organize what I learn over time and to create a long-term space for clear, reusable, and interview-ready knowledge.
 
-Get started by **creating a new site**.
+Most of the methodology comes from my studies in UC Berkeley's Statistics Department, while the practical perspective comes from internship and project experience.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## What this site includes
 
-### What you'll need
+This knowledge base will gradually cover topics such as:
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- Machine learning fundamentals
+- Statistical modeling
+- Feature engineering
+- A/B testing
+- Bayesian methods
+- Time series
+- Deep learning
+- LLMs
+- Interview case studies
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**.
+## Why I built this
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+My goal is not only to collect formulas and code snippets, but also to document:
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- Intuition behind methods
+- When to use them
+- Practical tradeoffs
+- Common pitfalls
+- Lessons from real projects
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## My focus
 
-## Start your site
+I am especially interested in building reliable and interpretable data science workflows. In many projects, I care not only about predictive performance, but also about:
 
-Run the development server:
+- Feature design
+- Model stability
+- Reproducibility
+- Clear communication
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+My long-term career goal is to become a product data scientist focused on user growth.
